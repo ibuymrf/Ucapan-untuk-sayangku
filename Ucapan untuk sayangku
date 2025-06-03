@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Riska</title>
+  <style>
+    body {
+      background-color: #fff4f4;
+      color: #5a1a2d;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #ucapan {
+      background: #ffeaea;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #cc3366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #991f4d;
+    }
+  </style>
+</head>
+<body>
+  <div id="ucapan">
+    <h1>Untuk Riska 🌹</h1>
+    <p>Riska…<br>
+    Di antara banyaknya bintang di langit, kamu adalah cahaya paling tenang yang membuat malamku berarti.<br><br>
+    Aku nggak perlu seribu kata untuk bilang "aku sayang kamu", karena cukup dengan satu detik di dekatmu, aku merasa paling utuh.<br><br>
+    Kamu bukan cuma seseorang yang aku cintai… Kamu adalah rumah, tempat aku pulang, dan alasan kenapa aku selalu ingin jadi lebih baik.<br><br>
+    Terima kasih karena selalu hadir dengan lembut, sehangat matahari pagi, dan seteduh hujan yang jatuh pelan.<br><br>
+    Aku mencintaimu, Riska. Dengan cara yang sederhana, tapi tulus sampai akhir waktu.</p>
+    <button onclick="ucap()">Dengarkan Ucapanku</button>
+  </div>
+
+  <script>
+    function ucap() {
+      const msg = new SpeechSynthesisUtterance();
+      msg.text = "Riska, aku mencintaimu. Dengan cara yang sederhana, tapi tulus sampai akhir waktu.";
+      msg.lang = 'id-ID';
+      window.speechSynthesis.speak(msg);
+    }
+  </script>
+</body>
+</html>
